@@ -23,10 +23,9 @@ class Box
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      image(this.image, this.body.position.x, this.body.position.y, 30, 40);
+      imageMode(CENTER)
+      image(this.image, 0,0, 30, 40);
 
-      rectMode(CENTER);
-      rect(0,0,this.width,this.height);      
       pop();
     }
     else 
